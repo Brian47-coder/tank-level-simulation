@@ -35,3 +35,29 @@ An interactive Python application designed for 3D visualization, variable geomet
    ```bash
    git clone [https://github.com/Brian47-coder/tank-level-simulation.git](https://github.com/Brian47-coder/tank-level-simulation.git)
    cd tank-level-simulation
+
+---
+
+## Interfaz de la Aplicación
+
+### 1. Vista Principal y Sección 2D (`Inicio`)
+![Vista Frontal y Control de Volumen](assets/tab_inicio.png)
+
+* **Control Deslizante de Volumen Interactivo:** Permite manipular en tiempo real el volumen de líquido ($m^3$) y el porcentaje de llenado.
+* **Gráfico de Sección Transversal 2D:** Muestra la representación del segmento circular de la altura del fluido ($h$), mapeada dinámicamente según el diámetro del tanque.
+
+---
+
+### 2. Configuración de Parámetros 3D (`Parámetros`)
+![Renderizado 3D del Modelo de Tanque](assets/tab_parametros.png)
+
+* **Controles de Geometría Variable:** Controles deslizantes y casillas numéricas interactivas para ajustar el Diámetro ($D$) y la Longitud ($L$) del tanque.
+* **Renderizado 3D Ortográfico:** Visualización 3D en tiempo real utilizando una perspectiva isométrica para inspeccionar la distribución del volumen de líquido sin distorsión por punto de fuga.
+
+---
+
+### 3. Convergencia del Solvedor Numérico (`Cálculos`)
+![Animación de Newton-Raphson](assets/tab_calculos.png)
+
+* **Análisis de la Función Objetivo:** Grafica $g(t)$ a lo largo del dominio del parámetro angular normalizado $t \in [-\pi/2, \pi/2]$.
+* **Controles de Animación Paso a Paso:** Botones de reproducción, pausa, avance paso a paso y reinicio para visualizar en tiempo real la convergencia iterativa del método de Newton-Raphson.
